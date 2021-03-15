@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		9DE8028A230805260042B32B /* fatBrain-Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9DE8028B230805260042B32B /* Build configuration list for PBXAggregateTarget "fatBrain-Framework" */;
+			buildPhases = (
+				9DE8028E230805760042B32B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "fatBrain-Framework";
+			productName = "fatBrain-Framework";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		7430310025FFE8B000D5BECF /* libmatio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 743030FF25FFE8B000D5BECF /* libmatio.a */; };
+		7430310225FFE8B300D5BECF /* libopencv_world.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7430310125FFE8B300D5BECF /* libopencv_world.a */; };
+		7430310425FFE8BB00D5BECF /* libmatio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7430310325FFE8BB00D5BECF /* libmatio.a */; };
+		7430310625FFE8BE00D5BECF /* libopencv_world.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7430310525FFE8BE00D5BECF /* libopencv_world.a */; };
+		74BF85CC25D6B5A400D48CE1 /* AudioSpectrum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74B685E825D6B097008C8D18 /* AudioSpectrum.cpp */; };
+		74BF85D125D6B5A500D48CE1 /* AudioSpectrum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74B685E825D6B097008C8D18 /* AudioSpectrum.cpp */; };
+		74BF85D625D6B5A500D48CE1 /* AudioSpectrum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74B685E825D6B097008C8D18 /* AudioSpectrum.cpp */; };
+		9D96D6F223168C2400AF0409 /* Brain_Brigde.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D4D6BCD23152B9F00C43AC3 /* Brain_Brigde.cpp */; };
+		9D96D6F323168C2400AF0409 /* Brain_Brigde.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D4D6BCD23152B9F00C43AC3 /* Brain_Brigde.cpp */; };
+		9DC3990623082B8B002961FE /* Brain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DE8027E230804B00042B32B /* Brain.cpp */; };
+		9DC3990A23082BE4002961FE /* Brain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DE8027E230804B00042B32B /* Brain.cpp */; };
+		9DE80281230804B00042B32B /* Brain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DE8027E230804B00042B32B /* Brain.cpp */; };
+		9DE80299230807370042B32B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DE80298230807370042B32B /* main.cpp */; };
+		B12BB92F2381822B00857538 /* Brain_Bridge_Tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B12BB92E2381822B00857538 /* Brain_Bridge_Tests.cpp */; };
+		B12BB9312381832B00857538 /* FFT_Apple.mm in Sources */ = {isa = PBXBuildFile; fileRef = B133B12923802F43008B8CEE /* FFT_Apple.mm */; };
+		B12BB9322381832C00857538 /* FFT_Apple.mm in Sources */ = {isa = PBXBuildFile; fileRef = B133B12923802F43008B8CEE /* FFT_Apple.mm */; };
+		B12BB935238188F600857538 /* AudioProcessing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B12BB934238188F600857538 /* AudioProcessing.cpp */; };
+		B12BB9362381892B00857538 /* AudioProcessing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B12BB934238188F600857538 /* AudioProcessing.cpp */; };
+		B12BB9372381892B00857538 /* AudioProcessing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B12BB934238188F600857538 /* AudioProcessing.cpp */; };
+		B12BB93823818C4000857538 /* Brain_Bridge_Tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B12BB92E2381822B00857538 /* Brain_Bridge_Tests.cpp */; };
+		B133B12A23802F43008B8CEE /* FFT_Apple.mm in Sources */ = {isa = PBXBuildFile; fileRef = B133B12923802F43008B8CEE /* FFT_Apple.mm */; };
+		B1E9D09C23BF711F00663C09 /* MathFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B18A071A23B12A3F009145C7 /* MathFunctions.cpp */; };
+		B1E9D09D23BF711F00663C09 /* MathFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B18A071A23B12A3F009145C7 /* MathFunctions.cpp */; };
+		B1E9D09E23BF712000663C09 /* MathFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B18A071A23B12A3F009145C7 /* MathFunctions.cpp */; };
+		B1F5650E24460788002FDC7A /* Semaphore.h in Headers */ = {isa = PBXBuildFile; fileRef = B1F5650C24460788002FDC7A /* Semaphore.h */; };
+		B1F5650F24460788002FDC7A /* Semaphore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1F5650D24460788002FDC7A /* Semaphore.cpp */; };
+		B1F5651024460788002FDC7A /* Semaphore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1F5650D24460788002FDC7A /* Semaphore.cpp */; };
+		B1F5651324460874002FDC7A /* BrainWorker.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B1F5651124460874002FDC7A /* BrainWorker.hpp */; };
+		B1F5651424460874002FDC7A /* BrainWorker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1F5651224460874002FDC7A /* BrainWorker.cpp */; };
+		B1F5651524460874002FDC7A /* BrainWorker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1F5651224460874002FDC7A /* BrainWorker.cpp */; };
+		B1F56519244609B9002FDC7A /* Score.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B1F56517244609B9002FDC7A /* Score.hpp */; };
+		B1F5651E244609ED002FDC7A /* ColorType.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B1F5651C244609ED002FDC7A /* ColorType.hpp */; };
+		B1F5652124461012002FDC7A /* BrainWorker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1F5651224460874002FDC7A /* BrainWorker.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9DE8026C2308048D0042B32B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE80294230807360042B32B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		743030FF25FFE8B000D5BECF /* libmatio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmatio.a; path = "3rd-Party-Libraries/macos/matio/lib/libmatio.a"; sourceTree = "<group>"; };
+		7430310125FFE8B300D5BECF /* libopencv_world.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_world.a; path = "3rd-Party-Libraries/macos/opencv/lib/libopencv_world.a"; sourceTree = "<group>"; };
+		7430310325FFE8BB00D5BECF /* libmatio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmatio.a; path = "3rd-Party-Libraries/ios/matio/lib/libmatio.a"; sourceTree = "<group>"; };
+		7430310525FFE8BE00D5BECF /* libopencv_world.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_world.a; path = "3rd-Party-Libraries/ios/opencv/lib/libopencv_world.a"; sourceTree = "<group>"; };
+		74B685E825D6B097008C8D18 /* AudioSpectrum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioSpectrum.cpp; sourceTree = "<group>"; };
+		74B685E925D6B097008C8D18 /* AudioSpectrum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AudioSpectrum.hpp; sourceTree = "<group>"; };
+		74F0C3C925FBD79A00780A24 /* ColorSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorSpace.h; sourceTree = "<group>"; };
+		9D4D6BCD23152B9F00C43AC3 /* Brain_Brigde.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Brain_Brigde.cpp; sourceTree = "<group>"; };
+		9D4D6BCE23152B9F00C43AC3 /* Brain_Brigde.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Brain_Brigde.hpp; sourceTree = "<group>"; };
+		9DC20A93233632E9003D842A /* test2.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = test2.dat; sourceTree = "<group>"; };
+		9DE8026E2308048D0042B32B /* libiOS_Brain-Framework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libiOS_Brain-Framework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE8027A230804AF0042B32B /* Neuron.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Neuron.hpp; sourceTree = "<group>"; };
+		9DE8027D230804B00042B32B /* Brain.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Brain.hpp; sourceTree = "<group>"; };
+		9DE8027E230804B00042B32B /* Brain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Brain.cpp; sourceTree = "<group>"; };
+		9DE80286230805150042B32B /* libmacOS_Brain-Framework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libmacOS_Brain-Framework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE80296230807360042B32B /* Brain */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Brain; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE80298230807370042B32B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B12BB92D2381822B00857538 /* Brain_Bridge_Tests.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Brain_Bridge_Tests.hpp; sourceTree = "<group>"; };
+		B12BB92E2381822B00857538 /* Brain_Bridge_Tests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Brain_Bridge_Tests.cpp; sourceTree = "<group>"; };
+		B12BB934238188F600857538 /* AudioProcessing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioProcessing.cpp; sourceTree = "<group>"; };
+		B133B12923802F43008B8CEE /* FFT_Apple.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FFT_Apple.mm; sourceTree = "<group>"; };
+		B18004BB238ACB3200D9AAA1 /* test.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.dat; sourceTree = "<group>"; };
+		B18A071923B12A3F009145C7 /* MathFunctions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MathFunctions.hpp; sourceTree = "<group>"; };
+		B18A071A23B12A3F009145C7 /* MathFunctions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MathFunctions.cpp; sourceTree = "<group>"; };
+		B1ABB6632448DBB60013C533 /* CameraType.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CameraType.hpp; sourceTree = "<group>"; };
+		B1F5650C24460788002FDC7A /* Semaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Semaphore.h; sourceTree = "<group>"; };
+		B1F5650D24460788002FDC7A /* Semaphore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Semaphore.cpp; sourceTree = "<group>"; };
+		B1F5651124460874002FDC7A /* BrainWorker.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BrainWorker.hpp; sourceTree = "<group>"; };
+		B1F5651224460874002FDC7A /* BrainWorker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BrainWorker.cpp; sourceTree = "<group>"; };
+		B1F56517244609B9002FDC7A /* Score.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Score.hpp; sourceTree = "<group>"; };
+		B1F5651C244609ED002FDC7A /* ColorType.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ColorType.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DE8026B2308048D0042B32B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7430310425FFE8BB00D5BECF /* libmatio.a in Frameworks */,
+				7430310625FFE8BE00D5BECF /* libopencv_world.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE80284230805150042B32B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7430310025FFE8B000D5BECF /* libmatio.a in Frameworks */,
+				7430310225FFE8B300D5BECF /* libopencv_world.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE80293230807360042B32B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D4D6BCC23152B6800C43AC3 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				9D4D6BCD23152B9F00C43AC3 /* Brain_Brigde.cpp */,
+				9D4D6BCE23152B9F00C43AC3 /* Brain_Brigde.hpp */,
+				B12BB92E2381822B00857538 /* Brain_Bridge_Tests.cpp */,
+				B12BB92D2381822B00857538 /* Brain_Bridge_Tests.hpp */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		9DE802652308048D0042B32B = {
+			isa = PBXGroup;
+			children = (
+				9DE802702308048D0042B32B /* Brain-Framework */,
+				9DE80297230807360042B32B /* Brain */,
+				9DE8026F2308048D0042B32B /* Products */,
+				9DE8028F230806830042B32B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9DE8026F2308048D0042B32B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DE8026E2308048D0042B32B /* libiOS_Brain-Framework.a */,
+				9DE80286230805150042B32B /* libmacOS_Brain-Framework.a */,
+				9DE80296230807360042B32B /* Brain */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DE802702308048D0042B32B /* Brain-Framework */ = {
+			isa = PBXGroup;
+			children = (
+				B1F5651624460893002FDC7A /* Models */,
+				9D4D6BCC23152B6800C43AC3 /* Bridge */,
+				B1F565062446076A002FDC7A /* Core */,
+				B18A071823B12A24009145C7 /* Math */,
+				B12BB934238188F600857538 /* AudioProcessing.cpp */,
+				B1F5651224460874002FDC7A /* BrainWorker.cpp */,
+				B1F5651124460874002FDC7A /* BrainWorker.hpp */,
+			);
+			path = "Brain-Framework";
+			sourceTree = "<group>";
+		};
+		9DE8028F230806830042B32B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7430310525FFE8BE00D5BECF /* libopencv_world.a */,
+				7430310325FFE8BB00D5BECF /* libmatio.a */,
+				7430310125FFE8B300D5BECF /* libopencv_world.a */,
+				743030FF25FFE8B000D5BECF /* libmatio.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DE80297230807360042B32B /* Brain */ = {
+			isa = PBXGroup;
+			children = (
+				B18004BB238ACB3200D9AAA1 /* test.dat */,
+				9DC20A93233632E9003D842A /* test2.dat */,
+				9DE80298230807370042B32B /* main.cpp */,
+			);
+			path = Brain;
+			sourceTree = "<group>";
+		};
+		B18A071823B12A24009145C7 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				B18A071923B12A3F009145C7 /* MathFunctions.hpp */,
+				B18A071A23B12A3F009145C7 /* MathFunctions.cpp */,
+				B133B12923802F43008B8CEE /* FFT_Apple.mm */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		B1F565062446076A002FDC7A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B1F5650D24460788002FDC7A /* Semaphore.cpp */,
+				B1F5650C24460788002FDC7A /* Semaphore.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B1F5651624460893002FDC7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				74B685E825D6B097008C8D18 /* AudioSpectrum.cpp */,
+				74B685E925D6B097008C8D18 /* AudioSpectrum.hpp */,
+				9DE8027E230804B00042B32B /* Brain.cpp */,
+				9DE8027D230804B00042B32B /* Brain.hpp */,
+				B1ABB6632448DBB60013C533 /* CameraType.hpp */,
+				74F0C3C925FBD79A00780A24 /* ColorSpace.h */,
+				B1F5651C244609ED002FDC7A /* ColorType.hpp */,
+				9DE8027A230804AF0042B32B /* Neuron.hpp */,
+				B1F56517244609B9002FDC7A /* Score.hpp */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9DE80282230805150042B32B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F56519244609B9002FDC7A /* Score.hpp in Headers */,
+				B1F5650E24460788002FDC7A /* Semaphore.h in Headers */,
+				B1F5651E244609ED002FDC7A /* ColorType.hpp in Headers */,
+				B1F5651324460874002FDC7A /* BrainWorker.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9DE8026D2308048D0042B32B /* iOS_Brain-Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DE802772308048D0042B32B /* Build configuration list for PBXNativeTarget "iOS_Brain-Framework" */;
+			buildPhases = (
+				9DE8026A2308048D0042B32B /* Sources */,
+				9DE8026B2308048D0042B32B /* Frameworks */,
+				9DE8026C2308048D0042B32B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS_Brain-Framework";
+			productName = "Brain-Framework";
+			productReference = 9DE8026E2308048D0042B32B /* libiOS_Brain-Framework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9DE80285230805150042B32B /* macOS_Brain-Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DE80287230805150042B32B /* Build configuration list for PBXNativeTarget "macOS_Brain-Framework" */;
+			buildPhases = (
+				9DE80282230805150042B32B /* Headers */,
+				9DE80283230805150042B32B /* Sources */,
+				9DE80284230805150042B32B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "macOS_Brain-Framework";
+			productName = "macOS_Brain-Framework";
+			productReference = 9DE80286230805150042B32B /* libmacOS_Brain-Framework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9DE80295230807360042B32B /* Brain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DE8029A230807370042B32B /* Build configuration list for PBXNativeTarget "Brain" */;
+			buildPhases = (
+				9DE80292230807360042B32B /* Sources */,
+				9DE80293230807360042B32B /* Frameworks */,
+				9DE80294230807360042B32B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Brain;
+			productName = Brain;
+			productReference = 9DE80296230807360042B32B /* Brain */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DE802662308048D0042B32B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Backyard Brains";
+				TargetAttributes = {
+					9DE8026D2308048D0042B32B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					9DE80285230805150042B32B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					9DE8028A230805260042B32B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					9DE80295230807360042B32B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 9DE802692308048D0042B32B /* Build configuration list for PBXProject "Brain-Framework" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9DE802652308048D0042B32B;
+			productRefGroup = 9DE8026F2308048D0042B32B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DE8026D2308048D0042B32B /* iOS_Brain-Framework */,
+				9DE80285230805150042B32B /* macOS_Brain-Framework */,
+				9DE8028A230805260042B32B /* fatBrain-Framework */,
+				9DE80295230807360042B32B /* Brain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9DE8028E230805760042B32B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -r \"${SRCROOT}/library/\"\n\nFAT_LIBRARY_PATH=\"${SRCROOT}/library/lib\"\nINCLUDE_LIBRARY_PATH=\"${SRCROOT}/library/include\"\n\nIOS_TARGET_NAME=iOS_Brain-Framework\nMACOS_TARGET_NAME=macOS_Brain-Framework\n\nmkdir -p \"${FAT_LIBRARY_PATH}\"\nmkdir -p \"${INCLUDE_LIBRARY_PATH}\"\n\nxcodebuild -target ${IOS_TARGET_NAME} -configuration ${CONFIGURATION} -sdk iphonesimulator -arch x86_64 BUILD_DIR=${BUILD_DIR} BUILD_ROOT=${BUILD_ROOT}\nxcodebuild -target ${IOS_TARGET_NAME} -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=${BUILD_DIR}/i386 BUILD_ROOT=${BUILD_ROOT}\nxcodebuild -target ${IOS_TARGET_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos -arch arm64 -arch armv7s -arch armv7 BUILD_DIR=${BUILD_DIR} BUILD_ROOT=${BUILD_ROOT}\n#xcodebuild -target ${MACOS_TARGET_NAME} -configuration ${CONFIGURATION} -sdk macosx BUILD_DIR=${BUILD_DIR} BUILD_ROOT=${BUILD_ROOT}\n\nlipo -create -output \"${FAT_LIBRARY_PATH}/lib${PROJECT_NAME}.a\" ${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${IOS_TARGET_NAME}.a ${BUILD_DIR}/i386/${CONFIGURATION}-iphonesimulator/lib${IOS_TARGET_NAME}.a ${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${IOS_TARGET_NAME}.a\n#${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a  ${BUILD_DIR}/${CONFIGURATION}/lib${PROJECT_NAME}.a\n\ncp -R \"${PROJECT_NAME}/Bridge/*.h* ${INCLUDE_LIBRARY_PATH}\"\n\nrm -r \"${PROJECT_DIR}/build\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DE8026A2308048D0042B32B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DE80281230804B00042B32B /* Brain.cpp in Sources */,
+				B133B12A23802F43008B8CEE /* FFT_Apple.mm in Sources */,
+				B1F5650F24460788002FDC7A /* Semaphore.cpp in Sources */,
+				74BF85CC25D6B5A400D48CE1 /* AudioSpectrum.cpp in Sources */,
+				B12BB935238188F600857538 /* AudioProcessing.cpp in Sources */,
+				B1F5651424460874002FDC7A /* BrainWorker.cpp in Sources */,
+				B12BB92F2381822B00857538 /* Brain_Bridge_Tests.cpp in Sources */,
+				9D96D6F223168C2400AF0409 /* Brain_Brigde.cpp in Sources */,
+				B1E9D09C23BF711F00663C09 /* MathFunctions.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE80283230805150042B32B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12BB9362381892B00857538 /* AudioProcessing.cpp in Sources */,
+				9DC3990623082B8B002961FE /* Brain.cpp in Sources */,
+				B1F5651024460788002FDC7A /* Semaphore.cpp in Sources */,
+				74BF85D125D6B5A500D48CE1 /* AudioSpectrum.cpp in Sources */,
+				B12BB9312381832B00857538 /* FFT_Apple.mm in Sources */,
+				B12BB93823818C4000857538 /* Brain_Bridge_Tests.cpp in Sources */,
+				B1F5651524460874002FDC7A /* BrainWorker.cpp in Sources */,
+				9D96D6F323168C2400AF0409 /* Brain_Brigde.cpp in Sources */,
+				B1E9D09D23BF711F00663C09 /* MathFunctions.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE80292230807360042B32B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F5652124461012002FDC7A /* BrainWorker.cpp in Sources */,
+				74BF85D625D6B5A500D48CE1 /* AudioSpectrum.cpp in Sources */,
+				B12BB9372381892B00857538 /* AudioProcessing.cpp in Sources */,
+				9DC3990A23082BE4002961FE /* Brain.cpp in Sources */,
+				B12BB9322381832C00857538 /* FFT_Apple.mm in Sources */,
+				9DE80299230807370042B32B /* main.cpp in Sources */,
+				B1E9D09E23BF712000663C09 /* MathFunctions.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9DE802752308048D0042B32B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9DE802762308048D0042B32B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9DE802782308048D0042B32B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E8C46L5TFQ;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/3rd-Party-Libraries/ios/matio/include",
+					"$(PROJECT_DIR)/3rd-Party-Libraries/ios/opencv/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/3rd-Party-Libraries/ios/matio/lib",
+					"$(PROJECT_DIR)/3rd-Party-Libraries/ios/opencv/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DE802792308048D0042B32B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E8C46L5TFQ;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/3rd-Party-Libraries/ios/matio/include",
+					"$(PROJECT_DIR)/3rd-Party-Libraries/ios/opencv/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/3rd-Party-Libraries/ios/matio/lib",
+					"$(PROJECT_DIR)/3rd-Party-Libraries/ios/opencv/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9DE80288230805150042B32B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E8C46L5TFQ;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/3rd-Party-Libraries/macos/matio/include",
+					"$(PROJECT_DIR)/3rd-Party-Libraries/macos/opencv/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/3rd-Party-Libraries/macos/matio/lib",
+					"$(PROJECT_DIR)/3rd-Party-Libraries/macos/opencv/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9DE80289230805150042B32B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E8C46L5TFQ;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/3rd-Party-Libraries/macos/matio/include",
+					"$(PROJECT_DIR)/3rd-Party-Libraries/macos/opencv/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/3rd-Party-Libraries/macos/matio/lib",
+					"$(PROJECT_DIR)/3rd-Party-Libraries/macos/opencv/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9DE8028C230805260042B32B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = E8C46L5TFQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9DE8028D230805260042B32B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E8C46L5TFQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9DE8029B230807370042B32B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E8C46L5TFQ;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/3rd/macos/matio/include",
+					"$(PROJECT_DIR)/3rd/macos/opencv/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/3rd/macos/matio/lib",
+					"$(PROJECT_DIR)/3rd/macos/opencv/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9DE8029C230807370042B32B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E8C46L5TFQ;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/3rd/macos/matio/include",
+					"$(PROJECT_DIR)/3rd/macos/opencv/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/3rd/macos/matio/lib",
+					"$(PROJECT_DIR)/3rd/macos/opencv/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DE802692308048D0042B32B /* Build configuration list for PBXProject "Brain-Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DE802752308048D0042B32B /* Debug */,
+				9DE802762308048D0042B32B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DE802772308048D0042B32B /* Build configuration list for PBXNativeTarget "iOS_Brain-Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DE802782308048D0042B32B /* Debug */,
+				9DE802792308048D0042B32B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DE80287230805150042B32B /* Build configuration list for PBXNativeTarget "macOS_Brain-Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DE80288230805150042B32B /* Debug */,
+				9DE80289230805150042B32B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DE8028B230805260042B32B /* Build configuration list for PBXAggregateTarget "fatBrain-Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DE8028C230805260042B32B /* Debug */,
+				9DE8028D230805260042B32B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DE8029A230807370042B32B /* Build configuration list for PBXNativeTarget "Brain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DE8029B230807370042B32B /* Debug */,
+				9DE8029C230807370042B32B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DE802662308048D0042B32B /* Project object */;
+}
