@@ -69,4 +69,4 @@ fastlane/screenshots
 xcuserdata/
 
 #Static libraries
-**/library/lib/*.a
+**/library
