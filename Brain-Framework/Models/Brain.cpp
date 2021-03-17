@@ -40,6 +40,8 @@ int Brain::load(std::string filePath_, double msPerStep_, double nStepsPerLoop_)
     // Parse neuron data
     neurons = parseNeurons(matvar);
     
+//    Mat_VarFree(matvar);
+//    Mat_VarFree(fooMatvar);
     Mat_Close(matfp);
     
     std::random_device rd{};
@@ -129,7 +131,14 @@ std::vector<Neuron> Brain::parseNeurons(matvar_t* brainStruct)
             for (int k = i; k < numberOfNeurons * fooMatvar->dims[1]; k = k + numberOfNeurons) {
                 std::vector<bool> visPrefsVector;
                 for (int j = k; j < numberOfNeurons * fooMatvar->dims[1] * fooMatvar->dims[2]; j = j + numberOfNeurons * fooMatvar->dims[1]) {
-                    visPrefsVector.push_back(((bool*)fooMatvar->data)[j]);
+                    
+                    if (fooMatvar->isLogical) {
+                        bool value = ((bool*)fooMatvar->data)[j];
+                        visPrefsVector.push_back(value);
+                    } else {
+                        double value = ((double*)fooMatvar->data)[j];
+                        visPrefsVector.push_back(value > 0.5 ? true : false);
+                    }
                 }
                 neuron.visPref.push_back(visPrefsVector);
             }
