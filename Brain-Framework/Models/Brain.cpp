@@ -132,6 +132,8 @@ std::vector<Neuron> Brain::parseNeurons(matvar_t* brainStruct)
                 std::vector<bool> visPrefsVector;
                 for (int j = k; j < numberOfNeurons * fooMatvar->dims[1] * fooMatvar->dims[2]; j = j + numberOfNeurons * fooMatvar->dims[1]) {
                     
+                    // We will stick with double, Chris said in email on 22.03.2021.
+                    // TODO: - visPref should be std::vector<std::vector<double>> instead of std::vector<std::vector<bool>>
                     if (fooMatvar->isLogical) {
                         bool value = ((bool*)fooMatvar->data)[j];
                         visPrefsVector.push_back(value);
