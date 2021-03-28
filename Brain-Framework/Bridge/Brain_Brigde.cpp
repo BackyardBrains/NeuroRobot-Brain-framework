@@ -291,6 +291,34 @@ const bool*** brain_getVisPrefs(const void* object, size_t *numberOfNeurons, siz
     return visPrefs;
 }
 
+const double* brain_getAudioPrefs(const void* object, size_t *numberOfNeurons) {
+    
+    BrainWorker* brainObject = (BrainWorker*)object;
+    
+    auto neuronValuesVector = brainObject->getAudioPrefs();
+    
+    *numberOfNeurons = neuronValuesVector.size();
+    double* neuronValues = new double[*numberOfNeurons];
+    
+    std::memcpy(neuronValues, neuronValuesVector.data(), (*numberOfNeurons) * sizeof(double));
+    
+    return neuronValues;
+}
+
+const double* brain_getDistPrefs(const void* object, size_t *numberOfNeurons) {
+    
+    BrainWorker* brainObject = (BrainWorker*)object;
+    
+    auto neuronValuesVector = brainObject->getDistPrefs();
+    
+    *numberOfNeurons = neuronValuesVector.size();
+    double* neuronValues = new double[*numberOfNeurons];
+    
+    std::memcpy(neuronValues, neuronValuesVector.data(), (*numberOfNeurons) * sizeof(double));
+    
+    return neuronValues;
+}
+
 /// Helpers
 const void brain_getSpectrum(const int16_t* audioData, const int numberOfSamples, int sampleRate, float *amplitude, float *frequency, int *count) {
 

@@ -581,6 +581,27 @@ std::vector<std::vector<std::vector<bool>>> BrainWorker::getVisPrefs()
     return visPrefs;
 }
 
+std::vector<double> BrainWorker::getAudioPrefs() {
+    std::vector<double> audioPrefs;
+    
+    for (auto & neuron : brain.neurons) {
+        audioPrefs.push_back(neuron.audioPref);
+    }
+    
+    return audioPrefs;
+}
+
+std::vector<double> BrainWorker::getDistPrefs() {
+    std::vector<double> audioPrefs;
+    
+    for (auto & neuron : brain.neurons) {
+        audioPrefs.push_back(neuron.distPref);
+    }
+    
+    return audioPrefs;
+}
+
+
 int closest(std::vector<float> const& vec, float value) {
     auto const it = std::lower_bound(vec.begin(), vec.end(), value);
     if (it == vec.end()) { return -1; }

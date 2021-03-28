@@ -39,6 +39,8 @@ const double* brain_getX(const void* object, size_t *numberOfNeurons);
 const double* brain_getY(const void* object, size_t *numberOfNeurons);
 const double** brain_getColors(const void* object, size_t *numberOfNeurons, size_t *numberOfColors);
 const bool*** brain_getVisPrefs(const void* object, size_t *numberOfNeurons, size_t *numberOfParams, size_t *numberOfCams);
+const double* brain_getAudioPrefs(const void* object, size_t *numberOfNeurons);
+const double* brain_getDistPrefs(const void* object, size_t *numberOfNeurons);
 
 /// Helpers
 const void brain_getSpectrum(const int16_t* audioData, const int numberOfSamples, int sampleRate, float *amplitude, float *frequency, int *count);

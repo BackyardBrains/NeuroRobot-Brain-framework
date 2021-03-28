@@ -124,6 +124,12 @@ public:
     
     /// Returns `vis_prefs` values of neurons
     std::vector<std::vector<std::vector<bool>>> getVisPrefs();
+    
+    /// Returns `audio_prefs` values of neurons
+    std::vector<double> getAudioPrefs();
+    
+    /// Returns `dist_prefs` values of neurons
+    std::vector<double> getDistPrefs();
 };
 
 #endif /* BrainWorker_hpp */
